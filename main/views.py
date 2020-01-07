@@ -66,7 +66,7 @@ def talkingTest(request):
 		'AccessKeyId':ID,
 		'Action' : "Chat",  # 必要参数
 		'InstanceId' : "chatbot-cn-4591d9l7a0002t",  # 你阿里云的机器人实例id
-		# "SessionId": "4fbbfd2af337492a8d222ec02d98aa2e"
+		"SessionId":"54e6a931794143a18654f9f24b13f74f"
 	}
 
 	D['SignatureNonce'] = str(uuid.uuid1())  # 唯一随机数，用于防止网络重放攻击。
