@@ -100,7 +100,7 @@ def talkingTest(request):
 def selecting(event):
 	logger = logging.getLogger()
 	logger.info(event)
-	slots = request.GET['tim']
+	slots = event.GET['tim']
 	print(slots)
 	# slots = eventObj["tim"]
 	logger.info(slots)
