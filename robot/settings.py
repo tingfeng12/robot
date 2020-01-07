@@ -82,7 +82,7 @@ DATABASES = {
         'OPTIONS': {'charset': 'utf8','init_command': "SET sql_mode='STRICT_TRANS_TABLES'",},
 
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'SnackS#2019DB',
         'HOST': '127.0.0.1',
         
     }
