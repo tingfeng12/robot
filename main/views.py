@@ -109,5 +109,8 @@ def selecting(event, context):
 		eventObj["global"]["obje"] = "长假"
 	else:
 		eventObj["global"]["obje"] = "短假"
+	print(eventObj["global"]["obje"])
+	print('--------------------------------------------------------------------')
+	print(eventObj)
 	return eventObj
 
