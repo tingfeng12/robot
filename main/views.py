@@ -97,7 +97,7 @@ def talkingTest(request):
 
 
 
-def selecting(event, context):
+def selecting(event):
 	logger = logging.getLogger()
 	logger.info(event)
 	eventObj = json.loads(event)
