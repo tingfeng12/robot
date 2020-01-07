@@ -100,12 +100,12 @@ def talkingTest(request):
 def selecting(event):
 	logger = logging.getLogger()
 	logger.info(event)
-	eventObj = json.loads(event)
-
-	slots = eventObj["tim"]
+	slots = request.GET['tim']
+	print(slots)
+	# slots = eventObj["tim"]
 	logger.info(slots)
-	orderId = slots[u"请假意图.天数"]
-	if orderId >=5:
+	# orderId = slots[u"请假意图.天数"]
+	if slots >=5:
 		eventObj["global"]["obje"] = "长假"
 	else:
 		eventObj["global"]["obje"] = "短假"
